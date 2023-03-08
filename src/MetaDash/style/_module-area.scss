@@ -1,0 +1,142 @@
+@import "./module-box";
+
+.Section.module-area{
+  margin-top: 30px;
+}
+
+.module-area {
+  margin-right: 80px;
+  margin-left: 80px;
+
+
+  display: grid;
+  
+  grid-gap: 16px;
+
+  grid-template-rows: 20px 180px 90px repeat(6, 80px);
+
+  grid-template-columns: minmax(280px, 280px) repeat(3, 1fr) 280px;
+
+  grid-template-areas:
+    // -- 1x20px
+    "textmenu   textmenu    textmenu    textmenu textmenu"
+    // -- 1x180px
+    "gender     birthyear   birthyear   birthyear interviewers"
+    // -- 1x90px
+    "languages  birthyear   birthyear   birthyear interviewers"
+    // --- 6x90px
+    "languages  birthplaces birthplaces  programs  programs"
+    "languages  birthplaces birthplaces  programs  programs"
+    "languages  birthplaces birthplaces  programs  programs"
+    "languages  birthplaces birthplaces  programs  programs"
+    "languages  birthplaces birthplaces  programs  programs"
+    //"languages  birthplaces birthplaces  programs  programs"
+    "languages  birthplaces birthplaces  programs  programs";
+  .text-menu {
+    grid-area: textmenu;//-start / textmenu-start / textmenu-end / textmenu-end;
+  }
+  .tagfilter-collection {
+    display: flex;
+  }
+
+  .Gender {
+    grid-area: gender;//-start / gender-start / gender-end / gender-end;
+  }
+  .Languages {
+    grid-area: languages;//-start / languages-start / languages-end / languages-end;
+  }
+
+  .Interviewers{
+    grid-area: interviewers;
+  }
+
+  .BirthPlaces {
+    grid-area: birthplaces;//-start / birthplaces-start / birthplaces-end / birthplaces-end;
+  }
+
+  .BirthYear {
+    grid-area: birthyear;//-start / birthyear-start / birthyear-end / birthyear-end;
+  }
+
+  .Programs {
+    grid-area: programs;//-start / programs-start / programs-end /programs-end;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .module-area {
+    display: grid;
+
+    grid-template-rows: 1em 270px repeat(5, 180px);
+    grid-template-columns: repeat(6, fr);
+    grid-template-areas:    
+      "textmenu     textmenu     textmenu textmenu     textmenu     textmenu"
+      "gender    birthyear    birthyear  birthyear    birthyear    birthyear"
+      // "birthyear    birthyear"
+      "birthplaces  birthplaces  birthplaces  programs  programs  programs"
+      "birthplaces  birthplaces  birthplaces  programs  programs  programs"
+      "birthplaces  birthplaces  birthplaces  programs  programs  programs"
+      // "gender       gender       gender       gender"
+      "languages    languages    interviewers interviewers interviewers interviewers"
+      //"languages    languages    interviewers interviewers interviewers interviewersx"
+      //"languages    languages    interviewers interviewers interviewers interviewersx"
+      "languages    languages    interviewers interviewers interviewers interviewers";
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .module-area {
+    display: grid;
+    margin-right: 30px;
+    margin-left: 30px;
+
+
+    grid-template-rows: 1em 300px repeat(10, 180px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    
+      "textmenu     textmenu"
+      "birthyear    birthyear"
+      "birthplaces  birthplaces"
+      "birthplaces  birthplaces"
+      "birthplaces  birthplaces"
+      "programs     programs"
+      "programs     programs"
+      "programs     programs"
+      "gender       gender"
+      "languages    interviewers"
+      "languages    interviewers"
+      "languages    interviewers";
+  }
+  
+}
+
+
+@media only screen and (max-width: 599px) {
+  .module-area {
+    display: grid;
+    margin-right: 30px;
+    margin-left: 30px;
+
+    grid-template-rows: 1em 320px repeat(13, 180px);
+    grid-template-columns: 1fr;
+    // // grid-template-rows: repeat(6,minmax(1fr, 300px));
+    // grid-template-columns: minmax(200px, 1fr) repeat(2, 2fr) 300px;
+    grid-template-areas:    //"overview  overview  overview  overview"
+      "textmenu"
+      "birthyear"
+      "birthplaces"
+      "birthplaces"
+      "birthplaces"
+      "programs"
+      "programs"
+      "programs"
+      "gender"
+      "interviewers"
+      "interviewers"
+      "interviewers"
+      "languages"
+      "languages"
+      "languages";
+  }
+}

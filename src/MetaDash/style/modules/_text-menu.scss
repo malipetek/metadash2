@@ -1,0 +1,17 @@
+.text-menu {
+  display: flex;
+  justify-content: flex-end;
+  font-family: $font-sans;
+  padding-right: 30px;
+
+  .item {
+    padding-left: 1em;
+    text-decoration: underline;
+    color: $color-reallylightgray;
+  }
+
+  .item:hover {
+    color: $color-fortunoff;
+    cursor: pointer;
+  }
+}

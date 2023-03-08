@@ -1,0 +1,39 @@
+.SiteBanner{
+    background-color: white;
+    box-shadow: 0px 1px 30px #ddd;
+    display: flex;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    .site-logo{
+        box-sizing: border-box;
+        background-color: rgb(2, 53, 107);
+        height: 80px;
+        width: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        svg {
+            margin-top: 3px;
+        }
+
+    }
+
+    .site-title{
+        display: flex;
+        align-items: center;
+        padding-left: 21px;
+
+
+        svg {
+            font-weight: normal;
+            text-align: center;
+            margin-top: 3px;
+        }
+
+    }
+
+
+}

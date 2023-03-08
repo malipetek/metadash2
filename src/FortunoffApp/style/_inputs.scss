@@ -1,0 +1,106 @@
+// // https://stackoverflow.com/questions/38663578/how-to-hide-autofill-safari-icon-in-input-field
+// input::-webkit-textfield-decoration-container {
+//   // display: none; /* or whatever styling you want */
+//   // background: url(graphics/search-icon.svg) no-repeat scroll 7px 7px;
+//   // background-origin: content-box;
+//   // background-position: center right;
+// }
+
+.FortunoffApp{
+
+  .ItemSelector {
+    border: 1px solid $color-inputborder;
+    padding-left: 8px;
+    padding-right: 8px;
+  
+    .button.dropdown-icon{
+      width: 0px;
+      background-color: unset;
+    }
+    
+    .button.dropdown-icon.x{
+      width: 32px;
+      padding-right: 6px; 
+      background: url(graphics/x-field.svg) no-repeat;// scroll 1em 1em;
+      background-origin: content-box;
+      background-position: center right;
+      background-size: 1em;
+      cursor: pointer;
+    
+    }
+  
+    .button.dropdown-icon.x:hover{
+      color: green;
+    }
+  }
+  
+  .react-autosuggest__input, input{
+    font-family: $font-serif;
+    font-size: 18px;
+  }
+  
+  select, option{
+    // font-family: $font-sans;
+    font-size: 14px;
+  }
+  
+  .react-autosuggest__input,
+  input,
+  select {
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+  
+    background-color: $color-backgroundgray;
+    color: $color-yaleblack;
+    border: 1px solid $color-inputborder;
+    // padding: 10px 15px;
+    height: 36px;
+    padding: 0px 4px;
+  }
+  
+  .TextInput input,
+  .react-autosuggest__input {
+    // padding-left: 16px;
+    // padding-right: 16px; 
+    padding: 0px 8px;
+    background: url(graphics/search-icon.svg) no-repeat scroll 7px 7px;
+    background-origin: content-box;
+    background-position: center right;
+    background-size: 21px;
+    background-color: $color-backgroundgray;
+  }
+  
+  // input[type="text"]{
+  //     text-align: left;
+  //     box-sizing: border-box;
+  //     width: 100%;
+  //     font-family: $font-serif;
+  //     background-color: #efefef;
+  //     color: #666;
+  //     font-size: 18px;
+  //     border: none;
+  //     padding: 10px 15px;
+  // }
+  
+  
+  select.dropdown-icon.arrow {
+    background: url(graphics/dropdown-arrow.svg) no-repeat scroll 7px 7px;
+    background-origin: content-box;
+    background-position: center right;
+    background-size: 1em;
+  }
+  
+  
+  // select.dropdown-icon.x {
+  //   // background: url(graphics/x-field.svg) no-repeat scroll 7px 7px;
+  //   // background-origin: content-box;
+  //   // background-position: center right;
+  //   // background-size: 1em;
+  // }
+  
+  .react-autosuggest__suggestions-container{
+    max-height: 400px;
+    overflow-x: scroll;
+  }
+}

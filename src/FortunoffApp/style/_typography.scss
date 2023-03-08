@@ -1,0 +1,61 @@
+@import "./fonts";
+
+// defaults
+
+@mixin typography-module-box-title {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-bottom: 18px;
+  font-family: $font-serif;
+}
+
+
+@mixin typography-body {
+  font-family: $font-serif;
+  color: $color-yaleblack;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@mixin typography-intro-prose {
+  font-family: $font-serif;
+  font-size: 24px;
+  color: $color-darkgray;
+}
+
+
+
+@mixin typography-count-list {
+  font-family: $font-sans;
+  font-size: 12px;
+  color: $color-textgray;
+  font-weight: 600;
+
+  .list-item:hover,
+  .list-item.selected {
+    .list-item-name,
+    .list-item-value {
+      color: $color-yaleblack;
+    }
+  }
+}
+
+@mixin typography-viz{
+
+    svg{
+        font-family: $font-sans;
+        font-weight: 600;
+        font-size: 12px;
+        color: $color-textgray;    
+    }
+
+}
+

@@ -1,0 +1,45 @@
+.Gender {
+    @include typography-gender;
+
+    .selected {
+        color: $color-robinegg;
+    }
+
+    
+    .label-area.off {
+        color: $color-lightgray;
+    }
+
+    .label-area.on {
+        color: $color-yaleblack;
+
+        .subtext {
+            color: $color-textgray;
+        }
+    }
+
+    .label-area.on:hover {
+        color: $color-robinegg;
+        .subtext{
+            color: $color-robinegg;
+        }
+    }
+
+    .label-area.off:hover{
+        color: $color-fortunoff;
+    }
+
+    .gender-bar.men {
+        background-color: $color-teal;
+      }
+    
+      .gender-bar.both {
+        background-color: $color-marigold;
+      }
+    
+      .gender-bar.women {
+        background-color: $color-fortunoff;
+      }
+    
+
+}

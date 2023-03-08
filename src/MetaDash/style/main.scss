@@ -1,0 +1,158 @@
+@import "./module-area";
+@import "./modules/gender";
+@import "./modules/languages";
+@import "./modules/interviewers";
+@import "./modules/birth-and-recording-years";
+@import "./modules/birth-places";
+@import "./modules/programs";
+@import "./modules/results";
+@import "./modules/subject-headings";
+@import "./modules/text-menu";
+// @import "./modules/hover-text";
+// @import "./modules/countlist";
+// @import "./modules/viz";
+@import "./layout";
+
+.MetaDash {
+  section.headings-area {
+    margin-top: 34px;
+  }
+
+  .headings-area {
+    background-color: white;
+
+    .TagFilter {
+      background-color: $color-backgroundgray;
+
+      .top-area {
+        background-color: $color-headingsbackground;
+        height: 80px;
+        padding: 0px 80px;
+        display: flex;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.16);
+      }
+
+      .type-area {
+        flex: 1;
+        font-size: 24px;
+        display: flex;
+        padding-right: 20px;
+        // flex: auto auto;
+        align-items: center;
+        // justify-content: flex-end;
+
+        .title-area {
+          padding-right: 6px;
+        }
+      }
+
+      .TextInput {
+        padding: 0px;
+        display: flex;
+        flex: 2 2;
+
+        align-items: center;
+
+        input {
+          height: 42px;
+        }
+      }
+
+      .TagPool {
+        height: 85px;
+        overflow: hidden;
+        overflow-y: scroll;
+        margin: 1px 80px;
+        padding: 30px 0px;
+        // max-width: 1500px;
+        background-color: $color-white;
+
+        .TagItem {
+          font-family: $font-sans;
+          color: $color-darkgray;
+          font-size: 14px;
+          margin: 0px;
+          padding: 0.25em 0.5em;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .TagItem:hover {
+          color: $color-teal;
+          background-color: $color-lightmist;
+        }
+      }
+
+      .SelectionPool {
+        flex: 1 1;
+        padding: 19px 30px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        // overflow: scroll;
+        // overflow-y: hidden;
+        // white-space: nowrap;
+        max-height: 80px;
+
+        .SelectionPoolItem:hover {
+          color: unset;
+          background-color: $color-lightmist;
+          .button {
+            box-shadow: none;
+          }
+        }
+        .SelectionPoolItem {
+          flex: 0 0 auto;
+          display: flex;
+
+          // display: inline-block;
+          background-color: white;
+          border-radius: 10px;
+          height: 20px;
+          overflow: hidden;
+          box-sizing: border-box;
+          justify-content: center;
+          align-items: center;
+          padding-left: 1em;
+          font-family: $font-sans;
+          color: $color-textgray;
+
+          .button {
+            border: none;
+            color: $color-teal;
+
+            background: url("./graphics/x-tag-icon.svg") no-repeat scroll 1em 1em;
+            background-origin: content-box;
+            background-position: center center;
+            background-size: 1em;
+          }
+
+          .button:hover {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .MetaDash {
+      .headings-area {
+        .TagFilter {
+          .top-area {
+            flex-direction: column;
+            height: unset;
+            padding: 16px 16px;
+          }
+        }
+      }
+    }
+  }
+  

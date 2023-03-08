@@ -1,0 +1,39 @@
+.Languages {
+  //padding: 0px 0px 0px 0px;
+
+  .list-item {
+    .list-item-name {
+      color: $color-textgray;
+    }
+    .list-item-name,
+    .list-item-value {
+      flex: 4 4;
+    }
+
+    .list-item-value {
+      text-align: left;
+      // color: $color-yaleblack;
+    }
+
+    .pct-bar-container {
+      // transition: background-color 0.25s ease;
+      background-color: $color-sky;
+      flex: 4 4;
+
+      .pct-bar {
+        transition: background-color 0.25s ease, width 0.15s ease;
+        background-color: $color-teal;
+      }
+    }
+  }
+
+  .list-item:hover {
+    .pct-bar-container {
+      // background-color: $color-fortunoff;
+      .pct-bar {
+        background-color: $color-fortunoff;
+        width: 100% !important;
+      }
+    }
+  }
+}

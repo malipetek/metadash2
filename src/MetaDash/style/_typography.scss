@@ -1,0 +1,25 @@
+@import "./fonts";
+@import "./colors";
+
+
+@mixin typography-gender {
+  // the percentage
+  .big-label {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: $font-serif;
+    color: $color-yaleblack;
+  }
+
+  // the gender/count labels
+  .small-label {
+    font-family: $font-sans;
+    font-weight: bold;
+    font-size: 14px;
+
+    .subtext {
+      font-weight: 400;
+    }
+  }
+}
+

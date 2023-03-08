@@ -1,0 +1,18 @@
+// @import 'countlist';
+
+.Languages {
+  overflow: hidden;
+}
+
+.Languages {
+  .list-item-name {
+    text-align: right;
+    flex: 50% 50%;
+  }
+
+
+  .list-item-value {
+    text-align: left;
+    flex: 50% 50%;
+  }
+}
