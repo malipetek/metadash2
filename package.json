@@ -30,6 +30,8 @@
     "deploy": "gh-pages -d build",
     "deploy-dev": "node publish.js publish --remote origin",
     "deploy-prod": "node publish.js publish --remote production",
+    "jsontocsv": "node json_to_csv.js",
+    "csvtojson": "node csv_to_json.js",
     "help": "gh-pages --help"
   },
   "eslintConfig": {
