@@ -37,9 +37,15 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
 
-    - name: Build & Deploy with gh-pages
-      run: yarn deploy -- -u "github-actions-bot <support+actions@github.com>"
+    - name: Build ⚙️
+      run: yarn build
       env:
         CI: false
     
-
+    - name: Deploy to GitHub Pages
+      uses: Cecilapp/GitHub-Pages-deploy@v3
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        email: support+actions@github.com
+        build_dir: build
