@@ -37,8 +37,10 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
 
-    - name: Deploy with gh-pages
+    - name: Build ⚙️
       run: yarn build
+      env:
+        CI: false
 
     - name: Deploy with gh-pages
       run: yarn deploy-bot
