@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - '**.csv'
+  workflow_dispatch:
 name: 🚀 Rebuild from csv
 jobs:
   csv-process:
