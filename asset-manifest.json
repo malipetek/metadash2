@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/fortunoff-metadash/static/css/main.8a3e916c.css",
-    "main.js": "/fortunoff-metadash/static/js/main.1e5d07a8.js",
-    "static/media/yalenew-roman-webfont.woff": "/fortunoff-metadash/static/media/yalenew-roman-webfont.dc72385855adfe8187c3.woff",
-    "static/media/yalenew-roman-webfont.woff2": "/fortunoff-metadash/static/media/yalenew-roman-webfont.077c9e0f95bf605a4aa8.woff2",
-    "index.html": "/fortunoff-metadash/index.html",
-    "static/media/search-icon.svg": "/fortunoff-metadash/static/media/search-icon.6d9f1e898233f035a54c.svg",
-    "static/media/x-circle-icon.svg": "/fortunoff-metadash/static/media/x-circle-icon.8adc6e0810ab6f4276d0.svg",
-    "static/media/x-tag-icon.svg": "/fortunoff-metadash/static/media/x-tag-icon.e63794d06e74f9bfce75.svg",
-    "static/media/x-field.svg": "/fortunoff-metadash/static/media/x-field.969f699306abc4a0bc88.svg",
-    "static/media/dropdown-arrow.svg": "/fortunoff-metadash/static/media/dropdown-arrow.1e266fb2b54355eb942d.svg",
-    "main.8a3e916c.css.map": "/fortunoff-metadash/static/css/main.8a3e916c.css.map",
-    "main.1e5d07a8.js.map": "/fortunoff-metadash/static/js/main.1e5d07a8.js.map"
+    "main.css": "/metadash2/static/css/main.b5a89982.css",
+    "main.js": "/metadash2/static/js/main.1e5d07a8.js",
+    "static/media/yalenew-roman-webfont.woff": "/metadash2/static/media/yalenew-roman-webfont.dc72385855adfe8187c3.woff",
+    "static/media/yalenew-roman-webfont.woff2": "/metadash2/static/media/yalenew-roman-webfont.077c9e0f95bf605a4aa8.woff2",
+    "index.html": "/metadash2/index.html",
+    "static/media/search-icon.svg": "/metadash2/static/media/search-icon.6d9f1e898233f035a54c.svg",
+    "static/media/x-circle-icon.svg": "/metadash2/static/media/x-circle-icon.8adc6e0810ab6f4276d0.svg",
+    "static/media/x-tag-icon.svg": "/metadash2/static/media/x-tag-icon.e63794d06e74f9bfce75.svg",
+    "static/media/x-field.svg": "/metadash2/static/media/x-field.969f699306abc4a0bc88.svg",
+    "static/media/dropdown-arrow.svg": "/metadash2/static/media/dropdown-arrow.1e266fb2b54355eb942d.svg",
+    "main.b5a89982.css.map": "/metadash2/static/css/main.b5a89982.css.map",
+    "main.1e5d07a8.js.map": "/metadash2/static/js/main.1e5d07a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a3e916c.css",
+    "static/css/main.b5a89982.css",
     "static/js/main.1e5d07a8.js"
   ]
 }
