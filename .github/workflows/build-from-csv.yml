@@ -1,0 +1,22 @@
+on:
+  push:
+    paths:
+      - '**.csv'
+name: 🚀 Rebuild from csv
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    - name: 📦 Install Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+    - name: 🚀 Build from csv
+      run: npm run csvtojson
+    - name: 📤 Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
