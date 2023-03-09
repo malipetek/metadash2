@@ -43,7 +43,6 @@ jobs:
       steps:
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin https://github.com/${GITHUB_REPOSITORY}.git
           yarn gh-pages -d build -u --dotfiles=true "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
