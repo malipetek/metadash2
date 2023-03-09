@@ -19,7 +19,7 @@ jobs:
       run: yarn install
 
     - name: commit changes
-      run: git commit -m "csv to json data conversion"
+      run: git commit . -m "csv to json data conversion"
 
     - name: 🚀 Build from csv
       run: npm run csvtojson
