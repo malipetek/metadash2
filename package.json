@@ -27,7 +27,7 @@
     "document": "jsdoc src/Data --destination ./book/data-api",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build --dotfiles=true",
-    "deploy-bot": "gh-pages -d build -u --dotfiles=true",
+    "deploy-bot": "gh-pages -d build --dotfiles=true",
     "deploy-dev": "node publish.js publish --remote origin",
     "deploy-prod": "node publish.js publish --remote production",
     "jsontocsv": "node json_to_csv.js",
