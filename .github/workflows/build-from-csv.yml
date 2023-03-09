@@ -18,11 +18,12 @@ jobs:
     - name: Install dependencies
       run: yarn install
 
+    - name: 🚀 Build from csv
+      run: npm run csvtojson
+
     - name: commit changes
       run: git commit . -m "csv to json data conversion"
 
-    - name: 🚀 Build from csv
-      run: npm run csvtojson
     - name: 📤 Push changes
       uses: ad-m/github-push-action@master
       with:
