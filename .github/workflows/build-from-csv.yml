@@ -38,6 +38,7 @@ jobs:
   deployment:
       name: 🎉 Build & Deploy new gh pages
       runs-on: ubuntu-latest
+      needs: csv-process
       steps:
       - name: Deploy with gh-pages
         run: |
