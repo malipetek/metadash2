@@ -1,0 +1,55 @@
+.count-list {
+  @include typography-count-list;
+  font-weight: 600;
+  overflow: scroll;
+  max-height: 100%;
+
+  .x-circle-icon {
+    // flex: 10px 10px;
+    padding-left: 15px;
+    opacity: 0;
+
+  }
+
+  .selected {
+    .x-circle-icon {
+      opacity: inherit;
+      background-color: inherit;
+    }
+  }
+
+  .list-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // height: 1.25em;
+    // padding: 1px;
+    line-height: 0px;
+    margin-bottom: 20px;
+
+    // line-height: 30px;
+    margin-bottom: 0px;
+
+    line-height: 26px;
+  }
+  // .list-item-name {
+  // }
+
+  .list-item-value,
+  .list-item-name {
+    flex: auto;
+    padding: 0px 10px;
+  }
+
+  .list-item-value {
+    text-align: right;
+  }
+
+  .pct-bar-container {
+    height: 10px;
+  }
+
+  .pct-bar {
+    height: 10px;
+  }
+}

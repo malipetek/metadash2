@@ -1,0 +1,43 @@
+.HoverText {
+    text-align: center;
+    font-family: $font-sans;
+    font-size: 14px;
+    height: 1em;
+    //padding: 3px;
+    color: $color-textgray;
+    // display: flex;
+    //margin: 1em auto;
+    
+    .x-icon {
+        width: 1em;
+        height: 1em;
+        padding-right: 1em;
+    }
+
+    .unselected-item{
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+  
+    }
+
+
+    .selected-item {
+      color: $color-yaleblack;
+      display: flex;    
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+  
+      .x-icon {
+        background: url("./graphics/x-circle-icon.svg") no-repeat scroll;
+        background-origin: content-box;
+        background-position: center left;
+        background-size: 1em;
+      }
+    }
+
+    .selected-item:hover{
+        opacity: 0.75;
+    }
+  }

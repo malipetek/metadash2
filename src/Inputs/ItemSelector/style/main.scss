@@ -1,0 +1,44 @@
+.ItemSelector {
+    display: flex;
+    align-items: stretch;
+}
+
+.ItemSelector .clear-button{
+    width: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ItemSelector .clear-button.enabled:hover{
+    // cursor: pointer;
+
+    // background-color: gray;
+    // color: white;
+}
+
+
+
+.ItemSelector .clear-button,
+.ItemSelector select {
+    box-sizing: border-box;
+    // background-color: #efefef;
+    // color: gray;
+    // font-size: 18px;
+    // padding: 10px 15px;
+
+}
+
+.ItemSelector select {
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+
+    // width: 90%;
+    border: none;
+    display: inline-block;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;  
+    // padding: 10px 15px;
+
+}
