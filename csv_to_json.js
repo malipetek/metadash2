@@ -39,6 +39,18 @@ const parseCSV = async (str, options) => {
             }
           }
         }
+        if (Object.keys(record).map(key => record[key]).some(value => value.indexOf('null') > -1)) {
+          for (let key in record) {
+            if (Array.isArray(record[key])) {
+              console.log(key, record[key]);
+              record[key] = record[key].map(v => v === 'null' ? null : v);
+              console.log(key, record[key]);
+            }
+            if (record[key].indexOf('null') !== -1) {
+              record[key] = null;
+            }
+          }
+        }
         return record;
       }
     });
