@@ -38,5 +38,5 @@ jobs:
         branch: main
 
     - name: Deploy with gh-pages
-      run: yarn gh-pages -d build -u --dotfiles=true "github-actions-bot <support+actions@github.com>"
+      run: yarn deploy-bot
 
