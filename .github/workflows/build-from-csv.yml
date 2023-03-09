@@ -21,6 +21,12 @@ jobs:
     - name: 🚀 Build from csv
       run: npm run csvtojson
 
+    - name: set git email
+      run:  git config --global user.email "malipetek@gmail.com"
+
+    - name: set git user
+      run: git config --global user.name "Github Actions Bot"
+
     - name: commit changes
       run: git commit . -m "csv to json data conversion"
 
