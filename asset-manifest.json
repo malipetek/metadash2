@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/metadash2/static/css/main.b5a89982.css",
-    "main.js": "/metadash2/static/js/main.265f01a6.js",
+    "main.js": "/metadash2/static/js/main.685fc57d.js",
     "static/media/yalenew-roman-webfont.woff": "/metadash2/static/media/yalenew-roman-webfont.dc72385855adfe8187c3.woff",
     "static/media/yalenew-roman-webfont.woff2": "/metadash2/static/media/yalenew-roman-webfont.077c9e0f95bf605a4aa8.woff2",
     "index.html": "/metadash2/index.html",
@@ -11,10 +11,10 @@
     "static/media/x-field.svg": "/metadash2/static/media/x-field.969f699306abc4a0bc88.svg",
     "static/media/dropdown-arrow.svg": "/metadash2/static/media/dropdown-arrow.1e266fb2b54355eb942d.svg",
     "main.b5a89982.css.map": "/metadash2/static/css/main.b5a89982.css.map",
-    "main.265f01a6.js.map": "/metadash2/static/js/main.265f01a6.js.map"
+    "main.685fc57d.js.map": "/metadash2/static/js/main.685fc57d.js.map"
   },
   "entrypoints": [
     "static/css/main.b5a89982.css",
-    "static/js/main.265f01a6.js"
+    "static/js/main.685fc57d.js"
   ]
 }
