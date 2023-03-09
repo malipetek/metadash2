@@ -4,8 +4,8 @@ on:
       - '**.csv'
 name: 🚀 Rebuild from csv
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  csv-process:
+    name: 🎉 CSV data change processing
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
@@ -22,7 +22,7 @@ jobs:
       run: npm run csvtojson
 
     - name: set git email
-      run:  git config --global user.email "malipetek@gmail.com"
+      run:  git config --global user.email "support+actions@github.com"
 
     - name: set git user
       run: git config --global user.name "Github Actions Bot"
@@ -35,3 +35,13 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
+  deployment:
+      name: 🎉 Build & Deploy new gh pages
+      runs-on: ubuntu-latest
+      steps:
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d build -u --dotfiles=true "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

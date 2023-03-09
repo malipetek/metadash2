@@ -56,7 +56,7 @@ export default class extends React.Component {
 
                                 <div className="birth-year">
                                     {
-                                        result.birth_years
+                                        (result.birth_years || [])
                                             .filter(yr => yr)
                                             .map(yr => (<li className="sub-item" key={`by-${i}`}>{yr}</li>))
                                             .concat(result.birth_place_cities
@@ -75,7 +75,7 @@ export default class extends React.Component {
 
                                 </div>
                                 <div className="affiliate">
-                                    {result.programs.map((ref, i) => (<li className="sub-item" key={i}>{this.props.programs[ref].label}</li>))}
+                                    {(result.programs || []).map((ref, i) => (<li className="sub-item" key={i}>{this.props.programs[ref].label}</li>))}
                                 </div>
                                 <div className="recording-year">
                                     {getRecordingYear(result)}

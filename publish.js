@@ -4,7 +4,7 @@ const yargs = require('yargs');
 
 function publish(to){
 
-    ghpages.publish('dist', 
+    ghpages.publish('build', 
     {
         remote:to
     },

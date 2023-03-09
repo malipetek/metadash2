@@ -2,7 +2,7 @@
   "name": "metadash",
   "version": "0.1.0",
   "private": false,
-  "homepage": "/fortunoff-metadash",
+  "homepage": "/metadash2",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "d3": "^5.9.2",
@@ -14,7 +14,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-autosuggest": "^9.4.3",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0",
+    "react-scripts": "^5.0.1",
     "semiotic": "^1.19.7",
     "unidecode": "^0.1.8",
     "yargs": "^14.2.0"
@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "document": "jsdoc src/Data --destination ./book/data-api",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --dotfiles=true",
     "deploy-dev": "node publish.js publish --remote origin",
     "deploy-prod": "node publish.js publish --remote production",
     "jsontocsv": "node json_to_csv.js",
@@ -51,10 +51,10 @@
     ]
   },
   "devDependencies": {
-    "jsdoc": "^3.6.1",
-    "url-loader": "^1.1.2",
     "csv": "^6.2.8",
-    "jsonexport": "^3.2.0"
+    "jsdoc": "^3.6.1",
+    "jsonexport": "^3.2.0",
+    "url-loader": "^1.1.2"
   },
   "bit": {
     "env": {

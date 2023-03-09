@@ -67,7 +67,7 @@ function getData(options) {
     res.forEach(r => {
 
         // count occurrences of each subject
-        r.subject_refs.forEach(s => { incr("subjects", subjects.byID(s)) });
+        (r.subject_refs || []).forEach(s => { incr("subjects", subjects.byID(s)) });
 
         // count the number of records with both men and women
         const genderItem = { id: getGender(r).toLowerCase() };

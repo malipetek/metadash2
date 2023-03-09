@@ -47,7 +47,7 @@ module.exports = function(data, indexField) {
         terms = terms || [];
 
         (resources.query() || []).forEach(r => {
-            r[indexField].forEach(s => {
+            (r[indexField] || []).forEach(s => {
                 if (!(filters.itemContainsAllTerms(terms)(byID(s)))) { return false }
                 if (ret.indexOf(byID(s)) < 0) ret.push(byID(s))
             });
