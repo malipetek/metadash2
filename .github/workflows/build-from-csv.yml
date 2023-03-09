@@ -37,11 +37,9 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
 
-    - name: Build ⚙️
-      run: yarn build
+    - name: Build & Deploy with gh-pages
+      run: yarn deploy -- -u "github-actions-bot <support+actions@github.com>"
       env:
         CI: false
     
-    - name: Deploy with gh-pages
-      run: yarn deploy -- -u "github-actions-bot <support+actions@github.com>"
 
